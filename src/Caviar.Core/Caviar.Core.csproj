@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Version>1.0.3</Version>
     <Authors>北音执念</Authors>
     <Copyright>Apache-2.0</Copyright>
@@ -11,14 +10,12 @@
     <Description>Caviar-Blazor是采用Blazor + Ant Design的后台管理框架，框架包含了后台管理的常用功能，简单大方的界面，拥有数据权限、字段权限、API权限等，可精细化控制任意元素，而且更好的兼容手机端，让开发者更专注于业务上的开发。</Description>
     <PackageTags>caviar;Ant-Design;blazor;</PackageTags>
   </PropertyGroup>
-
   <ItemGroup>
     <None Remove="TemplateFile\Controller.txt" />
     <None Remove="TemplateFile\DataTemplate.txt" />
     <None Remove="TemplateFile\Index.txt" />
     <None Remove="TemplateFile\View.txt" />
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="TemplateFile\Controller.txt">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
@@ -33,26 +30,20 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="CacheManager.Core" Version="1.2.0" />
     <PackageReference Include="CacheManager.Microsoft.Extensions.Caching.Memory" Version="1.2.0" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\Caviar.SharedKernel\Caviar.SharedKernel.csproj" />
   </ItemGroup>
-
-
-	<ItemGroup>
-		<FrameworkReference Include="Microsoft.AspNetCore.App" />
-	</ItemGroup>
-
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
   <ItemGroup>
     <None Update="icon.png">
       <PackagePath>\</PackagePath>
       <Pack>True</Pack>
     </None>
   </ItemGroup>
-
 </Project>

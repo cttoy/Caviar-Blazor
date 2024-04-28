@@ -1,11 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-
+    <TargetFramework>net8.0</TargetFramework>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
     <PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
@@ -16,9 +13,7 @@
     </PackageReference>
     <PackageReference Include="xunit.extensibility.execution" Version="2.4.2" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\src\Caviar.Core\Caviar.Core.csproj" />
   </ItemGroup>
-
 </Project>

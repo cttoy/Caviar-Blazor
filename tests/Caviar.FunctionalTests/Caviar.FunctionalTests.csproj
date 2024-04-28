@@ -1,17 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-
+    <TargetFramework>net8.0</TargetFramework>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
-
   <ItemGroup>
     <None Remove="Resources\Language\en-US.json" />
     <None Remove="Resources\Language\zh-CN.json" />
     <None Remove="Resources\Language\zh-SG.json" />
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="Resources\Language\en-US.json">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
@@ -19,7 +15,6 @@
     <EmbeddedResource Include="Resources\Language\zh-SG.json" />
     <EmbeddedResource Include="Resources\Language\zh-CN.json" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
     <PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
@@ -30,10 +25,8 @@
     </PackageReference>
     <PackageReference Include="xunit.extensibility.execution" Version="2.4.2" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\src\Caviar.Core\Caviar.Core.csproj" />
     <ProjectReference Include="..\..\src\Caviar.Infrastructure\Caviar.Infrastructure.csproj" />
   </ItemGroup>
-
 </Project>
