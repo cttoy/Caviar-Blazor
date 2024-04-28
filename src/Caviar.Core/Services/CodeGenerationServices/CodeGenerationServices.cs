@@ -217,7 +217,7 @@ namespace Caviar.Core.Services
                     txt += $"<Input DebounceMilliseconds='-1' @bind-Value='@context.Entity.{item.Entity.FieldName}' />";
                     break;
                 case "int32":
-                    txt += $"<InputNumber DebounceMilliseconds='-1' @bind-Value='@context.Entity.{item.Entity.FieldName}' Style='width:50%'/>";
+                    txt += $"<AntDesign.InputNumber DebounceMilliseconds='-1' @bind-Value='@context.Entity.{item.Entity.FieldName}' Style='width:50%'/>";
                     break;
                 case "boolean":
                     txt += $"<Switch @bind-Value='@context.Entity.{item.Entity.FieldName}'/>";
