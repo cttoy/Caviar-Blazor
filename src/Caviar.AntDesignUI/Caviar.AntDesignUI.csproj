@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
-
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Authors>北音执念</Authors>
     <Description>Caviar-Blazor是采用Blazor + Ant Design的后台管理框架，框架包含了后台管理的常用功能，简单大方的界面，拥有数据权限、字段权限、API权限等，可精细化控制任意元素，而且更好的兼容手机端，让开发者更专注于业务上的开发。</Description>
     <Copyright>Apache-2.0</Copyright>
@@ -11,28 +10,22 @@
     <Version>1.0.3</Version>
     <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
-
-  
   <ItemGroup>
     <SupportedPlatform Include="browser" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="AntDesign" Version="0.12.6" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="6.0.10" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.10" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.4" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\Caviar.SharedKernel\Caviar.SharedKernel.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <None Update="icon.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
-
 </Project>
