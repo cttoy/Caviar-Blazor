@@ -74,8 +74,7 @@ namespace Caviar.Infrastructure
                 }
                 return client;
             });
-
-            services.AddScoped<IInteractor, Interactor>();
+                        
             return services;
         }
 
@@ -108,7 +107,7 @@ namespace Caviar.Infrastructure
             services.AddSingleton<CaviarConfig>(); // 配置文件
             services.AddScoped<IAuthService, ServerAuthService>();
             services.AddScoped<ILanguageService, InAssemblyLanguageService>();
-            services.AddScoped<Interactor>();
+            services.AddScoped<IInteractor, Interactor>();
             services.AddScoped<IAppDbContext, ApplicationDbContext>();
             services.AddScoped(typeof(IEasyBaseServices<,>), typeof(EasyBaseServices<,>));
             var injection = new AutomaticInjection();
