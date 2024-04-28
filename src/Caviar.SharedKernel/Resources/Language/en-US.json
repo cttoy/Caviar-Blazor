@@ -73,8 +73,8 @@
 
     },
     "ErrorMessage": {
-      "LengthErrorMsg": "{fieldName} Input length cannot exceed {length} character",
-      "RequiredErrorMsg": "{fieldName} Is required"
+      "LengthErrorMsg": "{0} Input length cannot exceed {1} character",
+      "RequiredErrorMsg": "{0} Is required"
     },
     "Menu": {
       "Home": "Home",
@@ -101,7 +101,7 @@
       "Cancel": "Cancel",
       "DeleteTitle": "Are you sure to {menu.DisplayName} this data",
       "FieldSearch": "{field.DisplayName} search",
-      "ComponentErrorMsg": "{title} component not found£¬please check URL address£º{url}",
+      "ComponentErrorMsg": "{title} component not found, please check URL address {url}",
       "SelectAccessibleMenu": "Please select the menu that {DataSource.Entity.Name} can access",
       "UserLogin": "User login",
       "InputUserName": "Enter one user name/phone number/E-mail",
