@@ -21,7 +21,7 @@ namespace Caviar.Infrastructure.Persistence
     /// <summary>
     /// 同步系统与数据库的数据
     /// </summary>
-    public class SysDataInit
+    public class SysDataInit : IDbInit
     {
         IDbContext _dbContext;
         IServiceScope _serviceScope;
